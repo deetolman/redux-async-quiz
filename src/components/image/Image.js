@@ -7,7 +7,8 @@ function Image({ image, fetch, loading }) {
     <>
     {loading ? <p>Loading....</p> :
       <div>
-        <img src={image}/>
+        <p>{image}</p>
+        {/* <img src={image}/> */}
         <Load fetch={fetch} />
       </div>}
     </>

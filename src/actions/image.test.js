@@ -10,7 +10,7 @@ describe('action test', () => {
       type: FETCH_IMAGE,
       loadStart: FETCH_IMAGE_LOADING,
       payload: Promise.resolve({
-        quote: 'quote'
+        image: 'image'
       })
     });
   });

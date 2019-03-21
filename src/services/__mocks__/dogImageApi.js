@@ -1,4 +1,4 @@
-export const getQuote = () => {
+export const getImage = () => {
   return Promise.resolve([
     'image'
   ]);

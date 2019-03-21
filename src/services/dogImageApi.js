@@ -5,7 +5,7 @@ export const getImage = () => {
     })
     .then(json => {
       return {
-        image: json.image
+        image: json[0].image
       };
     });
 };
