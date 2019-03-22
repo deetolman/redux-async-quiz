@@ -1,11 +1,11 @@
 
-import { getImage, FETCH_IMAGE, FETCH_IMAGE_LOADING } from './image';
+import { fetchImage, FETCH_IMAGE, FETCH_IMAGE_LOADING } from './image';
 
 jest.mock('../services/dogImageApi.js');
 
 describe('action test', () => {
   it('fetches an image', () => {
-    const action = getImage();
+    const action = fetchImage();
     expect(action).toEqual({
       type: FETCH_IMAGE,
       loadStart: FETCH_IMAGE_LOADING,

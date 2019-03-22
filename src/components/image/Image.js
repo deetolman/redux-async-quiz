@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Load from './Load';
 
-function Image({ image, fetch, loading }) {
+function Image({ image, loading, fetch }) {
   return (
     <>
     {loading ? <p>Loading....</p> :
       <div>
-        <p>{image}</p>
-        {/* <img src={image}/> */}
+        <img src={image}/>
         <Load fetch={fetch} />
       </div>}
     </>
